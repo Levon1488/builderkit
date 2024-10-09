@@ -1,0 +1,1 @@
+export { PoweredByAvalanche } from './components/PoweredByAvalanche';

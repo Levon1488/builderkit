@@ -1,0 +1,1 @@
+export { useICTT } from './hooks/useICTT';

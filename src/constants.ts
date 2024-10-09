@@ -1,0 +1,1 @@
+export const C_CHAIN_RPC_URL = 'https://api.avax.network/ext/bc/C/rpc';

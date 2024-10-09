@@ -1,0 +1,57 @@
+[
+    {
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "bytes32",
+                        "name": "destinationBlockchainID",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "destinationBridgeAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "recipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "primaryFeeTokenAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "primaryFee",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "secondaryFee",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "requiredGasLimit",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "multiHopFallback",
+                        "type": "address"
+                    }
+                ],
+                "internalType": "struct SendTokensInput",
+                "name": "input",
+                "type": "tuple"
+            }
+        ],
+        "name": "send",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
