@@ -1,3 +1,9 @@
+import { useMemo } from "react";
+
+export const useValue = <T>(object: T): T => {
+    return useMemo(() => object, [object]);
+}
+
 export const search = (list: any[], input: string, fields: string[]) => {
     return list.filter(t => {
         let found = false;

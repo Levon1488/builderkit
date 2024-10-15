@@ -5,42 +5,13 @@ import { useTokens } from "../../../components/tokens";
 import { getNormalizedBN } from "../../../components/common";
 import { useWarpMessenger } from "../../../components/precompiles";
 import { useICTT } from "../hooks/useICTT";
-import { useValue } from "../../../components/common/utils/ui.utils";
+import { useValue } from "../../../components/common/utils/common.utils";
+import { Context, ICTTProps } from "../types";
 
-export type ICTTContextType = {
-    list: TokenItem[],
-    address: `0x${string}` | undefined,
-    mounted: boolean,
-    input: TokenItem, setInput: (token: TokenItem) => void,
-    onInputChange: (token: TokenItem) => void,
-    sourceChainId: number,
-    setSourceChainId: (chain_id: number) => void,
-    sourceInterchainMessenger: any,
-    chainOptions: number[],
-    destination: TokenItem,
-    destinationChainId: number,
-    destinationBlockchainId: string,
-    onDestinationChainChange: (chain_id: number) => void,
-    queryBalances: (token1: TokenItem, token2: TokenItem) => any,
-    isMultiHop: boolean,
-    home: TokenItem,
-    transactionData: any, setTransactionData: (data: any) => void,
-    transactionStatus: any, setTransactionStatus: (status: any) => void
-};
-
-const context = {} as ICTTContextType;
-export const ICTTContext = createContext<ICTTContextType>(context);
+const context = {} as Context;
+export const ICTTContext = createContext<Context>(context);
 export function useICTTContext() {
     return useContext(ICTTContext);
-}
-
-interface ICTTProps {
-    tokens: TokenItem[];
-    token_in: string;
-    source_chain_id: number;
-    destination_chain_id: number;
-    children: any;
-    className?: string;
 }
 
 export const Provider: React.FC<ICTTProps> = (props) => {
