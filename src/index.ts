@@ -16,7 +16,7 @@ export { Collectible } from './components/collectibles';
 export { ConnectStatusIndicator } from './components/wallet';
 export { TransactionManager, TransactionButton } from './components/transaction';
 export { useUniswapV2 } from './components/swap';
-export { useWarpMessenger } from './components/precompiles';
+export { useAllowList, useDeployerAllowList, useFeeManager, useNativeMinter, useRewardManager, useTransactionAllowList, useWarpMessenger } from './components/precompiles';
 export { useICTT } from './components/ictt';
 export { ChainIcon, ChainDropdown } from './components/chains';
 export { PoweredByAvalanche } from './components/avalanche';
