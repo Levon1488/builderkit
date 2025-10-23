@@ -4,9 +4,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "build:sdk": "tsc -p tsconfig.json",
+    "build:css": "tailwind -i ./src/styles/global.css -o dist/styles.css",
+    "build": "npm run build:sdk && npm run build:css",
     "watch:css": "tailwind -i ./src/styles/global.css -o dist/styles.css --watch",
     "watch:sdk": "tsc --watch",
     "watch": "concurrently \"npm run watch:sdk\" \"npm run watch:css\"",
+    "dev": "npm run watch",
+    "start": "npm run watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": false,
