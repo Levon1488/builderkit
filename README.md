@@ -80,4 +80,6 @@ For example usages of these components and hooks, please refer to our [Avalanche
 - [**ICTT Example**](https://github.com/ava-labs/avalanche-starter-kit/tree/main/web-apps/src/app/ictt) 
 
 ## Contributions
-We welcome contributions! Feel free to submit pull requests, report issues, or suggest new features to make BuilderKit even better for Avalanche L1 and blockchain app development. 
+We welcome contributions! Feel free to submit pull requests, report issues, or suggest new features to make BuilderKit even better for Avalanche L1 and blockchain app development.
+
+<!-- Test comment added by Devin for PR verification -->   
